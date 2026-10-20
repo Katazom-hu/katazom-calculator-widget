@@ -1,0 +1,30 @@
+{
+  "name": "katazom-calculator-widget",
+  "version": "1.0.0",
+  "description": "Beágyazható, reszponzív KATA keret- és adókalkulátor widget könyvelők, blogok és portálok számára a Katazom.hu-tól.",
+  "main": "widget.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katazom-hu/katazom-calculator-widget.git"
+  },
+  "keywords": [
+    "kata",
+    "calculator",
+    "adózás",
+    "kalkulátor",
+    "katazom",
+    "hungary",
+    "widget",
+    "embed",
+    "tax-calculator"
+  ],
+  "author": "Katazom.hu <kapcsolat@katazom.hu> (https://katazom.hu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Katazom-hu/katazom-calculator-widget/issues"
+  },
+  "homepage": "https://katazom.hu"
+}
