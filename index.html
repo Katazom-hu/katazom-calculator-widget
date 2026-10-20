@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katazom KATA Keretkalkulátor Widget – Élő Demó</title>
+  <meta name="description" content="Interaktív, beágyazható KATA keret- és adókalkulátor widget demó könyvelők és szakmai blogok számára.">
+  <link rel="stylesheet" href="./widget.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .demo-header {
+      max-width: 650px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .demo-badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .demo-title {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .demo-subtitle {
+      font-size: 15px;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+    .widget-container {
+      width: 100%;
+      max-width: 580px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+    .code-preview-box {
+      margin-top: 40px;
+      max-width: 650px;
+      width: 100%;
+      background: #090d16;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .code-preview-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      color: #e2e8f0;
+      overflow-x: auto;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="demo-header">
+    <div class="demo-badge">🇭🇺 Nyílt Forráskódú & Beágyazható</div>
+    <h1 class="demo-title">KATA Keret- és Adókalkulátor Widget</h1>
+    <p class="demo-subtitle">
+      Könnyűsúlyú, Vanilla JS kalkulátor könyvelőirodák és pénzügyi blogok számára. 
+      Próbáld ki a lenti élő demót, vagy másold ki a beágyazó kódot az oldaladhoz!
+    </p>
+  </header>
+
+  <main class="widget-container">
+    <div id="katazom-widget-demo"></div>
+  </main>
+
+  <section class="code-preview-box">
+    <div class="code-preview-title">
+      <span>Beágyazás a saját honlapodra (1 perc)</span>
+      <span style="color: #64748b; font-size: 12px;">CDN v1.0.0</span>
+    </div>
+    <pre><code>&lt;!-- 1. Stíluslap --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Katazom-hu/katazom-calculator-widget@1.0.0/widget.css"&gt;
+
+&lt;!-- 2. Konténer --&gt;
+&lt;div id="katazom-kalkulator-widget"&gt;&lt;/div&gt;
+
+&lt;!-- 3. Szkript inicializálás --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/Katazom-hu/katazom-calculator-widget@1.0.0/widget.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  KatazomWidget.init('#katazom-kalkulator-widget');
+&lt;/script&gt;</code></pre>
+  </section>
+
+  <script src="./widget.js"></script>
+  <script>
+    KatazomWidget.init('#katazom-widget-demo', {
+      defaultRevenue: 1200000,
+      defaultMonths: 12
+    });
+  </script>
+</body>
+</html>
