@@ -16,13 +16,13 @@ Egyszerűen másold be az alábbi kódrészletet a weboldalad tetszőleges HTML 
 
 ```html
 <!-- 1. Stíluslap betöltése -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katazom-calculator-widget@1.0.0/widget.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Katazom-hu/katazom-calculator-widget@1.0.0/widget.css">
 
 <!-- 2. Konténer elem, ahová a kalkulátor renderelődik -->
 <div id="katazom-kalkulator-widget"></div>
 
 <!-- 3. Szkript betöltése és inicializálása -->
-<script src="https://cdn.jsdelivr.net/npm/katazom-calculator-widget@1.0.0/widget.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Katazom-hu/katazom-calculator-widget@1.0.0/widget.js"></script>
 <script>
   KatazomWidget.init('#katazom-kalkulator-widget', {
     defaultRevenue: 1000000, // Alapértelmezett havi tervezett bevétel Ft-ban
